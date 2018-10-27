@@ -13,7 +13,7 @@ var margin = {top: 10, right: 30, bottom: 20, left: 10},
 
       d3.queue()
       .defer(d3.csv, 'tweetInfo.csv')
-      .defer(d3.csv, 'tweets-withcategory-noblank.csv')
+      .defer(d3.csv, 'tweets-withcategory.csv')
       .await(makeViz);
 
       function makeViz(error, info, tweets){
