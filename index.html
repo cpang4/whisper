@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="utf-8">
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <style type="text/css">
+  .line {
+        fill: none;
+        stroke: steelblue;
+        stroke-width: 0.5;
+        opacity: 0.2;
+      }
+    .line-hover {
+        fill: none;
+        stroke: red;
+        stroke-width: 0.5;
+        opacity: 0.5;
+      }
+    p{
+      font-family: Arial;
+      font-size: 10px;
+    }
+    </style>
+</head>
+
+<body>
+  <p>An implementation of "Whisper: Tracing the Spatiotemporal Process of Information Diffusion in Real Time"
+    <br>Click on a tweet in the center ring to see the diffusion.</p>
+  <svg id="viz" height="600" width="1000"></svg>
+  <script src="d3-scale-radial.js"></script>
+  <script src="script.js"></script>
+</body>
